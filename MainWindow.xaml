@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiceRoller"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="400">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="resultLabel" Content="0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Bottom"
+               Grid.ColumnSpan="4"/>
+        <Button x:Name="d20Button" Content="Roll d20"
+                Style="{StaticResource ButtonsStyle}"
+                Grid.Row="1"/>
+        <Button x:Name="d12Button" Content="Roll d12"
+                Style="{StaticResource ButtonsStyle}"
+                Grid.Row="2"/>
+        <Button x:Name="d8Button" Content="Roll d8"
+                Style="{StaticResource ButtonsStyle}"
+                Grid.Row="3"/>
+        <Button x:Name="d6Button" Content="Roll d6"
+                Style="{StaticResource ButtonsStyle}"
+                Grid.Row="4"/>
+        <Button x:Name="d4Button" Content="Roll d4"
+                Style="{StaticResource ButtonsStyle}"
+                Grid.Row="5"/>
+        <Button x:Name="d100Button" Content="Roll d100"
+                Style="{StaticResource ButtonsStyle}"
+                Grid.Row="6"/>
     </Grid>
 </Window>
